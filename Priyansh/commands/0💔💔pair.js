@@ -176,9 +176,7 @@ module.exports.run = async function({ api, event, Users }) {
     if (fs.existsSync(avt2Path)) imglove.push(fs.createReadStream(avt2Path));
 
     var msg = {
-      body: ` ${namee}
- ${name}
- ${tle}%`,
+      body: ` ✧•❁𝐘𝐨𝐮𝐫 𝐋𝐨𝐯𝐞❁•✧\n\n╔═══❖••° °••❖═══╗\n\n   𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠\n\n╚═══❖••° °••❖═══╝💕${namee}💕${name}💕${tle}%`,
       mentions: arraytag,
       attachment: imglove.length > 0 ? imglove : undefined
     };
